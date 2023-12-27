@@ -62,7 +62,7 @@ train.iloc[:,20:-1]=minmax_scaler.fit_transform(train.iloc[:,20:-1])
 #feature engineering
 #feature selection
 #use RandomForestRegressor to get the value of relative between each feature and target ,
-#then delect the feature whose value of relative is low
+#then delete the feature whose value of relative is low
 X = train.iloc[:,0:-1]
 Y = train['target']
 names = X.columns
@@ -83,7 +83,7 @@ plt.show()
 # In[6]:
 
 
-#delect the feature whose value of relative is low
+#delete the feature whose value of relative is low
 train = train.drop('id',axis=1)
 train = train.drop('num_16',axis=1)
 train = train.drop('num_34',axis=1)
